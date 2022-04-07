@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<body>
+    <div ></div>
+</body>
+<script>
+    class Staff{
+        constructor(fullname,email){
+            this.fullname = fullname;
+            this.email = email;
+        }
+        setFullname(fullname){
+            this.fullname = fullname;
+        }
+        setEmail(email){
+            this.email = email;
+        }
+        getFullname(){
+            return`Fullname: ${this.fullname}`
+        }
+        getEmail(){
+            return`Email: ${this.email}`
+        }
+        toString(){
+            return`Fullname: ${this.fullname}, Email: ${this.email}`
+        }
+    }
+
+    
+    objStaff1 = new Staff("David", "david@gmail.com");
+    objStaff1.setFullname("David")
+    objStaff1.setEmail("david@gmail.com")
+    console.log(objStaff1);
+    console.log(objStaff1.toString());
+    
+    objStaff2 = new Staff("David do", "david.do@gmail.com")
+    objStaff2.setFullname("David Do");
+    objStaff2.setEmail("david.do@gmail.com")
+    console.log(objStaff2);
+    console.log(objStaff2.toString());
+    var Staffs = [
+        new Staff("David", "david@gmail.com"),
+        new Staff("David Do", "david.do@gmail.com"),
+        new Staff("David Jin", "david.Jin@gmail.com"),
+    ]
+    for (let i =0 ; i< Staffs.length;i++ ){
+
+        console.log(Staffs[i].toString());
+    }  
+        
+
+    
+
+</script>
+</html>

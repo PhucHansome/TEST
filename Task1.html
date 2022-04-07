@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+</body>
+    <script>
+        function quadraticEquation2(a,b,c){
+            var delta = (b*b)-(4*(a*c));
+            var x1 = ((-b) + Math.sqrt(delta))/(2*a);
+            var x2 = ((-b) - Math.sqrt(delta))/(2*a);
+            var x0 = (-b)/(a*2);
+            if(delta > 0){
+                return `Phương trình có 2 nghiệm là: x1 = ${x1} x2 = ${x2}`;
+            }
+            if (delta < 0) {
+                return`Phương trình vô nghiệm`;
+            }
+            if(delta == 0){
+                return`Phương trình có nghiệm kép là x0 = ${x0}`;
+            }
+        }
+        alert(quadraticEquation2(8,12,-20));
+    </script>
+</html>
